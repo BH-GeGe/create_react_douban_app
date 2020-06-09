@@ -1,0 +1,37 @@
+.sliderBox {
+    background-color: #F9F9F9;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    .boxTitle {
+        height: 24px;
+        line-height: 24px;
+        .typeTitle {
+            font-size: 12px;
+        }
+        .more {
+            float: right;
+            color: #999;
+        }
+    }
+    .movieList {
+        display: flex;
+        overflow-x: auto;
+        li{
+            list-style: none;
+            margin: 5px 10px 5px 0;
+            img {
+                width: 80px;
+                height: 110px;
+            }
+            span{
+                font-size: 12px;
+                display: inline-block;
+                width: 80px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: center;
+            }
+        }
+    }
+}

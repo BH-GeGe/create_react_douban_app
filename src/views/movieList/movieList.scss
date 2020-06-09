@@ -1,0 +1,53 @@
+.ListBox {
+    background-color: #F5F5F5;
+    .linkA:nth-last-child(2) .movieItem {
+        border: none;
+    }
+    .movieItem {
+        display: flex;
+        align-items: center;
+        height: 120px;
+        border-bottom: 1px dashed #ccc;
+        > div {
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            img {
+                width: 70px;
+                height: 100px;
+                float: left;
+            }
+            div {
+                float: left;
+                max-width: 70%;
+                p {
+                    margin: 10px 0 10px 20px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    &:first-child {
+                        font-size: 16px;
+                    }
+                    &:nth-child(2) {
+                        color: #999;
+                        
+                    }
+                    &:last-child {
+                        color: #666;
+                    }
+                }
+            }
+            .score {
+                width: 30px;
+                height: 25px;
+                line-height: 25px;
+                border-radius: 8px;
+                background-color: rgb(245, 91, 35);
+                text-align: center;
+                color: #FFF;
+                font-weight: bold;
+                float: right;
+            }
+        }
+    }
+}
