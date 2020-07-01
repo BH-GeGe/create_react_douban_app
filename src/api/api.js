@@ -11,7 +11,7 @@ export default {
      */
     getInTheaters(start, count) {
       return request({
-        url: vm + '/in_theaters',
+        url: vm + '/in_theaters?apikey=' + apikey,
         method: 'get',
         params: {
           start: start,
@@ -22,11 +22,11 @@ export default {
     /**
      *  获取Top250的电影
      *  @start [数据开始项]
-     *  @count [单页条数]
+     *  @count [单页条数]n
      */
     getTop250(start, count) {
       return request({
-        url: vm + '/top250',
+        url: vm + '/top250?apikey=' + apikey,
         method: 'get',
         params: {
           start: start,
@@ -41,7 +41,7 @@ export default {
      */
     getComingSoon(start, count) {
       return request({
-        url: vm + '/coming_soon',
+        url: vm + '/coming_soon?apikey=' + apikey,
         method: 'get',
         params: {
           start: start,
@@ -55,7 +55,7 @@ export default {
      */
     getMovieDetails(id) {
       return request({
-        url: vm + `/${id}`,
+        url: vm + `/${id}?apikey=${apikey}`,
         method: 'get',
         params: {}
       })

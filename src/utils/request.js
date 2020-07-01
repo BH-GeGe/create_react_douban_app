@@ -4,7 +4,7 @@ import axios from 'axios'
 
 // 创建axios实例
 const service = axios.create({
-  baseURL: 'https://douban.uieee.com', // api的base_url  Vue项目可以根据 process.env.BASE_API，React可以在这里定义
+  baseURL: '', // api的base_url  Vue项目可以根据 process.env.BASE_API，React可以在这里定义
   // baseURL: '', // api的base_url  Vue项目可以根据 process.env.BASE_API，React可以在这里定义
   timeout: 50000, // 请求超时时间
   withCredentials: true, // 跨域携带cookie
